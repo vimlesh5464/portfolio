@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './Footer';
+import NotFound from './NotFound';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skill" element={<Skills />} />
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

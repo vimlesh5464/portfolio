@@ -8,6 +8,9 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Footer from './Footer';
+import Blog from './articles/Blog';
+import ArticleDetail from './articles/ArticleDetail';
+
 import NotFound from './NotFound';
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skill" element={<Skills />} />
+        {/* BLOG ROUTES */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<ArticleDetail />} />
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       <Footer/>
